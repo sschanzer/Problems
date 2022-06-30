@@ -1,2 +1,2 @@
 # Problems
-Problems: Leetcode, Project Euler, etc.
+These are a collection of Leetcode problems that I've solved.
