@@ -30,6 +30,13 @@ def maxDepth(root):
 
     return max_depth
 
+# Better Solution:
+def height(root):
+    if root is None:
+        return 0
+
+    return 1 + max(height(root.left), height(root.right))
+
 
 a = TreeNode(3)
 b = TreeNode(9)
@@ -50,7 +57,6 @@ if __name__ == "__main__":
     my_tree = bfs(a)
     print(my_tree)
 
-    depth1 = maxDepth(a)
+    depth1 = height(a)
     print(depth1) # 3
 
-    
